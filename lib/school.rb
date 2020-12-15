@@ -30,5 +30,7 @@ class School
     roster.collect do |grade, students|
       roster[grade][students].sort
     end
+
+    roster
   end
 end
