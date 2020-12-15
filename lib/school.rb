@@ -13,6 +13,6 @@ class School
   end
 
   def grade(year)
-    roster[year].values
+    roster[year]
   end
 end
