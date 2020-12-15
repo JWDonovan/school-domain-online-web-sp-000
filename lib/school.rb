@@ -7,7 +7,8 @@ class School
     @roster = {}
   end
 
-  def add_student(:grade, :student)
-    self.roster[:grade] << :student
+  def add_student(name, grade)
+    roster[grade] ||= []
+    roster[grade] << name
   end
 end
