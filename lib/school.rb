@@ -15,4 +15,10 @@ class School
   def grade(year)
     roster[year]
   end
+
+  def sort
+    roster.keys.sort
+
+    roster
+  end
 end
