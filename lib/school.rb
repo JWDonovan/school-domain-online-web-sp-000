@@ -17,12 +17,10 @@ class School
   end
 
   def sort
-    roster.keys.sort
-
+    sorted = {}
     roster.each do |grade, students|
-      students.values.sort
+      sorted[grade] = students.sort
     end
-
-    roster
+    sorted
   end
 end
