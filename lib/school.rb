@@ -16,11 +16,19 @@ class School
     roster[year]
   end
 
+  # def sort
+  #   sorted = {}
+  #   roster.each do |grade, students|
+  #     sorted[grade] = students.sort
+  #   end
+  #   sorted
+  # end
+
   def sort
-    sorted = {}
-    roster.each do |grade, students|
-      sorted[grade] = students.sort
+    roster[grade].sort
+
+    roster.collect do |grade, students|
+      roster[grade][students].sort
     end
-    sorted
   end
 end
