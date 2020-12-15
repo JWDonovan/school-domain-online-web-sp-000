@@ -31,6 +31,6 @@ class School
       sorted[grade] = students.sort
     end
 
-    roster
+    sorted
   end
 end
