@@ -19,6 +19,10 @@ class School
   def sort
     roster.keys.sort
 
+    roster.each do |grade, students|
+      students.values.sort
+    end
+
     roster
   end
 end
